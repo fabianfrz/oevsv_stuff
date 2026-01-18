@@ -8,7 +8,7 @@ class CardDatasetParserTest {
 
     @Test
     void testParsingWorks() {
-        CardDatasetParser parser = new CardDatasetParser();
+        var parser = new CardDatasetParser();
         var result  = parser.parse(
                 "OE0HQ, Headquater l Mitgliedsnummer: 00000 l ADL 000 l https://www.oevsv.at/card/00000")
             .orElseThrow();

@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class CardDatasetParser {
     // I don't get it why there are "l" characters in it when I look at it in the IDE for splitting,
     // shouldn't that be something like pipes
-    Pattern pattern = Pattern.compile("(\\S+), (.*?) l Mitgliedsnummer: (\\d+) l ADL (\\d+) l (.*)");
+    private final Pattern pattern = Pattern.compile("(\\S+), (.*?) l Mitgliedsnummer: (\\d+) l ADL (\\d+) l (.*)");
     public Optional<CardParsingResult> parse(String data) {
         var matcher = pattern.matcher(data);
         if (!matcher.find()) {
