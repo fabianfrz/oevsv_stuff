@@ -19,6 +19,8 @@ class CardDatasetParserTest {
         assertEquals(0, result.membershipNumber());
         assertEquals(0, result.adl());
         assertEquals(902, result2.adl());
+        assertTrue(parser.parse(null).isEmpty());
+        assertTrue(parser.parse("test").isEmpty());
     }
 
 }
