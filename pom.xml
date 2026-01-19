@@ -11,6 +11,17 @@
     <modules>
         <module>membership</module>
     </modules>
+    <inceptionYear>2026</inceptionYear>
+    <developers>
+        <developer>
+            <name>Fabian Franz BSc.</name>
+            <organization>ÖVSV</organization>
+        </developer>
+    </developers>
+    <scm>
+        <connection>git@github.com:fabianfrz/oevsv_stuff.git</connection>
+        <url>https://github.com/fabianfrz/oevsv_stuff</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
